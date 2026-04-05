@@ -1,51 +1,163 @@
-\documentclass[10pt]{beamer}
+\documentclass{beamer}
 
-\usetheme[progressbar=frametitle]{metropolis}
-\usepackage{appendixnumberbeamer}
+\usetheme{Singapore}
+\usecolortheme{default}
 
-\usepackage{booktabs}
-\usepackage[scale=2]{ccicons}
+\definecolor{darkviolet}{HTML}{1f0286}
+\definecolor{navblue}{HTML}{0000b4}
 
-\usepackage{pgfplots}
-\usepgfplotslibrary{dateplot}
+\setbeamercolor{frametitle}{fg=darkviolet}
+\setbeamercolor{structure}{fg=navblue}
 
-\usepackage{xspace}
-\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+\setbeamertemplate{navigation symbols}{}
 
-\title{Hawkes Processus}
-\subtitle{ATPA Track}
-\author{Jasmin NEVEU, Aziz SEGHAIER, Thibault MICOS, Antoine RUSTENDHOLZ}
-\date{}
-\institute{ENSAI}
+\makeatletter
+\setbeamertemplate{headline}{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1ex]{white}%
+    \insertnavigation{\paperwidth}%
+  \end{beamercolorbox}%
+}
+\makeatother
 
+\newcommand{\blue}[1]{\textcolor{navblue}{#1}}
+\newtheorem{remark}{Remarque}
 \begin{document}
 
-\maketitle
+\begin{frame}[plain]
+\centering
 
-\begin{frame}{Table of contents}
-  \setbeamertemplate{section in toc}[sections numbered]
-  \tableofcontents%[hideallsubsections]
+{\color{navblue}\LARGE
+  Processus de Hawkes
+\par}
+
+\vspace{2em}
+
+{\large
+Aziz Seghaier, Thibault Micos, Antoine Rustendholz, Jasmin Neveu
+\vspace{0.3em}
+\par}
+
+\vspace{1.5em}
+
+{\footnotesize
+Basé sur le papier de 
+Patrick J. Laub · Thomas Taimre · Philip K. Pollett
+\textit{Hawkes Processes} (2015)
+\par}
+
+\vspace{2em}
+
+{\small \textbf{Modèles Markovien - ATPA} \par}
+
+\vspace{0.5em}
+
+{\scriptsize April 8, 2026 \par}
+
 \end{frame}
 
 
-\section{Overview}
+\section{Généralités}
 
-\section{Numerical experiments}
+\begin{frame}
+  \begin{itemize}
+    \item Généralisation du processus de Poisson
+      \pause
+    \item Auto-exitant
+      \pause
+    \item Peut modéliser: tremblement de terre, ordre de marché, défault bancaire...
+
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Processus de comptage et processus ponctuels}
+  \begin{definition}[Processus de comptage]
+    Un processus de comptage $N(t)_{t \geq 0}$ est un processus stochastique partant de $N_0 = 0$, dont les trajectoires sont croissantes par sauts d'amplitude 1, continues à droite.
+  \end{definition}
+
+  \pause
+  \begin{definition}[Processus ponctuel]
+    Un processus ponctuel $\mathbf{T} = \{T_1,T_2,...\}$ est une suite de variables aléatoires dans $[0, \inf)$ telle que $\mathbb{P}(0 \leq T_1 \leq T_2  \leq ...) = 1$ et le nombre de points dans une région bornée est fini p.s
+  \end{definition}
+\end{frame}
+
+
+\begin{frame}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width = \textwidth]{images/point_processus.png}%
+  \label{fig:heatmap_pval}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}{Fonction de densité et fonction de répartition}
+  
+  \blue{Filtration naturelle}:
+
+  \begin{equation*}\mathcal{H}(u) = \sigma\bigl(T_n, n \leq u\bigr)\end{equation*}
+  \pause
+  \blue{Fonction de répartition}:
+  \begin{equation*}
+    \begin{aligned}
+      F^*\bigl(t \mid \mathcal{H}(u)\bigr) &= \int_u^t \mathbb{P} \bigl(T_{k+1} \in [s,s+\mathrm{d}s] \bigm| \mathcal{H}(u)\bigr) \, \mathrm{d}s \\
+                                           &= \int_u^t f^*(s \mid \mathcal{H}(u)) \, \mathrm{d}s.
+  \end{aligned}
+  \end{equation*}
+
+  \pause
+  \blue{Fonction de densité}:
+  \begin{equation*}
+  f(t_1,t_2,...,t_k) = \prod_{i=1}^k f^*(t_i | \mathcal{H}(t_{i-1})).
+  \end{equation*}
+
+\end{frame}
+
+% TODO: finir slide: parler d'auto-exitation etc
+\begin{frame}{Intensité conditionnelle}
+  Soit $(N_t)_{t \geq 0})$ un processus de comptage.
+\begin{definition}
+\begin{equation*}
+\lambda^*(t) = \lim_{h \to 0^{+}} \frac{\mathbb{E}\bigl[N(t+h)-N(t) | \mathcal{H}(t)\bigr]}{h}
+\end{equation*}
+\end{definition}
+
+
+\end{frame}
+ 
+
+\section{Processus de Hawkes}
+
+\begin{frame}
+  \begin{definition}[Processus de Hawkes]
+    Soit $(N_t)_{t\geq 0}$ un processus de comptage, tel que 
+    \begin{equation*}
+      \mathbb{P}\bigl(N(t+h) - N(t) = m | \mathcal{H}(t)\bigr) = \begin{cases}
+        \lambda^*(t)h + o(h), &m=1 \\
+        o(h), &m > 1\\
+        1 - \lambda^*(t)h + o(h), &m=0
+      \end{cases}
+    \end{equation*}
+  \end{definition}
+ \pause 
+ et tel que la fonction d'intensité peut s'écrire:
+  \begin{equation*}
+    \lambda^*(t) = \lambda + \sum_{t_i \leq t} \mu(t-t_i)
+  \end{equation*}
+  avec $lambda > 0$ et $\mu :(0, \inf) \rightarrow [0,\inf)$ respectivement \textit{intensité de fond} et \textit{fonction d'exitation}
+
+  \pause
+  \begin{remark}
+    Si $\mu(\text{·}) = 0 $, le processus se réduit à un processus de Poisson homogène.
+  \end{remark}
+
+\end{frame}
+
+\section{Simulation}
 
 \section{Application}
-\cite{lau}
 
-\appendix
 
-\begin{frame}{Proofs}
-\end{frame}
-
-\begin{frame}{Code}
-\end{frame}
-\begin{frame}[allowframebreaks]{References}
-
-\bibliography{biblio.bib}
-\bibliographystyle{abbrv}
-
-\end{frame}
 \end{document}
