@@ -124,6 +124,40 @@ Patrick J. Laub · Thomas Taimre · Philip K. Pollett
 \end{equation*}
 \end{definition}
 
+\pause
+\blue{Auto-exitation} \\
+
+Si une arrivée cause une augmentation de l'intensité conditonnelle, alors on dit que le processus est auto-exitant.
+
+\pause
+
+\blue{Auto-régulé}\\
+Si la fonction d'intensité conditionnelle baisse après une arrivée alors le processus est dit auto-régulé.
+
+\pause
+
+\blue{Explosion}  \\
+
+$N(t) - N(s) = \inf, ~\text{pour}~ t - s  \leq \inf$
+
+
+\end{frame}
+
+\begin{frame}{Compensateur}
+  \begin{definition}[Compensateur]
+    Soit $(N_t)_{t \geq 0}$  un processus de comptage croissant, la fonction 
+    \begin{equation*}
+      \Lambda(t) = \int_{0}^{t}\lambda^*(s) ds
+    \end{equation*}
+    est appelée compensateur du processus.
+  \end{definition}
+
+  \pause 
+  C'est l'unique fonction fonction prédictible issue de 0 telle que 
+  \begin{equation*}
+    N(t) = M(t) + \Lambda(t)
+  \end{equation*}
+  avec $M(t)$ une martingale
 
 \end{frame}
  
@@ -153,6 +187,13 @@ Patrick J. Laub · Thomas Taimre · Philip K. Pollett
     Si $\mu(\text{·}) = 0 $, le processus se réduit à un processus de Poisson homogène.
   \end{remark}
 
+\end{frame}
+
+\begin{frame}{Fonction d'exitation}
+  Généralement on définit la fonction d'exitation de la manière suivante:
+  \begin{equation*}
+    \mu(t) = \alpha \exp^{-\beta t}
+  \end{equation*}
 \end{frame}
 
 \section{Simulation}
