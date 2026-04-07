@@ -8,7 +8,7 @@ library(chron)
 library(ggplot2)
 library(patchwork)
 
-setwd("~/work/hawkes_processus/simulations")
+setwd("~/work/hawkes_processus/slides/images")
 gc()
 # cat("\014")
 # dev.off()
