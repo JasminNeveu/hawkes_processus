@@ -2,9 +2,11 @@
 
 # install.packages("ETAS")
 # install.packages("chron")
+# install.packages("patchwork")
 library(ETAS)
 library(chron)
 library(ggplot2)
+library(patchwork)
 
 setwd("~/work/hawkes_processus/simulations")
 gc()
@@ -30,18 +32,17 @@ n <- length(temp)-1
 plot1 <- ggplot()+
   geom_step(aes(x=temp, y=0:n))+
   labs(x = "temps (t)", y="N(t)", title="")+
-  theme_bw(base_size = 10)
+  theme_bw()
 
 plot1
 
-ggsave(filename = "plot_1_japan_earthq.pdf", plot=plot1, width = 6,         
-       height = 5,        
+ggsave(filename = "plot_1_japan_earthq.pdf", plot=plot1, width = 12,         
+       height = 10,        
        units = "cm",       
        dpi = 300,          
        device = "pdf")
 ### les données sous forme des m 1ers instants de sauts =====
 m <-100
-
 
 plot2 <- ggplot()+
   geom_point(aes(x=temp[1:m], y=rep(1, m)))+
@@ -50,8 +51,8 @@ plot2 <- ggplot()+
 
 plot2
 
-ggsave(filename = "plot_2_japan_earthq.pdf", plot=plot2, width = 6,         
-       height = 5,        
+ggsave(filename = "plot_2_japan_earthq.pdf", plot=plot2, width = 12,         
+       height = 10,        
        units = "cm",       
        dpi = 300,          
        device = "pdf")
@@ -69,7 +70,7 @@ l <- function(teta, ti=temp){
   for(i in 2:k){
     t11 <- exp( -beta*(ti[i]-ti[i-1]) )
     t12 <- 1 + Ai[i-1]
-    A[i] <-  t11*t12
+    Ai[i] <-  t11*t12
   }
   t21 <- sum(log(lambda + alpha*Ai))
   t22 <- -lambda*ti[k]
@@ -145,54 +146,49 @@ for(i in 1:N+1){
   opti[i, ] <- optim_i$par
 }
 # 
+M <- length(opti[, 1])
 
 ggplot()+
-  geom_point(aes(x=1:N, y=opti[, 1]))+
-  labs(main="évolution du maximum de vraisemblance de lambda", 
+  geom_point(aes(x=1:M, y=opti[, 1]))+
+  labs(title="évolution du maximum de vraisemblance de lambda", 
        x="nombre d'itérations", y="maximum de vraisemblance en lambda")+
   theme_bw()
 
 ggplot()+
-  geom_point(aes(x=1:N, y=opti[, 2]))+
-  labs(main="évolution du maximum de vraisemblance d'alpha", 
+  geom_point(aes(x=1:M, y=opti[, 2]))+
+  labs(title="évolution du maximum de vraisemblance d'alpha", 
        x="nombre d'itérations", y="maximum de vraisemblance en alpha")+
   theme_bw()
 
 ggplot()+
-  geom_point(aes(x=1:N, y=opti[, 3]))+
-  labs(main="évolution du maximum de vraisemblance de beta", 
+  geom_point(aes(x=1:M, y=opti[, 3]))+
+  labs(title="évolution du maximum de vraisemblance de beta", 
        x="nombre d'itérations", y="maximum de vraisemblance en beta")+
   theme_bw()
 
 ### exemple avec 4 graines différentes de l'estimateur =====
-M <- 100
+M <- 4
 n <- length(temp)-1
+p <- list()
 
-p <- c()
-set.seed(1149)
 for(i in 1:M){
-  st_hawkes_proc <- gen_process(lbda = st_lambda, alpha=st_alpha,
+  set.seed(1000*i+120*(i*10)^2)
+  st_hawkes_proc<- gen_process(lbda = st_lambda, alpha=st_alpha,
                                 beta = st_beta)
-  ni <- length(st_hawkes_proc)-1
-  pi <- ggplot()+
-    geom_step(aes(x=st_hawkes_proc, y=0:ni, color=paste0("simulation", i)))+
-    geom_step(aes(x=temp, y=0:n, color="data"))+
+  #ni <- length(st_hawkes_proc)-1
+  ni <- 100
+  
+  df_simu <- data.frame(x = st_hawkes_proc[1:ni], y = 0:(ni-1))
+  
+  p[[i]] <- ggplot()+
+    geom_step(data=df_simu, aes(x=x, y=y), color="red")+
+    geom_step(aes(x=temp[1:ni], y=0:(ni-1)), color="blue")+
     labs(x = "temps (t)", y="N(t)", title="")+
     theme_bw()
-  
-  p <- c(p, pi)
 }
 
-p1 <- p[1]
-p2 <- p[2]
-p3 <- p[3]
-p4 <- p[4]
+wrap_plots(p, ncol = 2, nrow = 2)
 
-ggsave(filename = "plot_data_model_4.pdf", plot=p4, width = 6,         
-       height = 5,        
-       units = "cm",       
-       dpi = 300,          
-       device = "pdf")
 
 
 
