@@ -2,7 +2,7 @@
 
 ## TODO:
   1. Jasmin:...
-  2. Thibault: 
+  2. Thibaut: 
   3. Antoine:
   4. Aziz:
 
