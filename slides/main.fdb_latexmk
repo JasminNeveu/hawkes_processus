@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1775423680.70342 "main.tex" "main.pdf" "main" 1775423682.05405 0
+["pdflatex"] 1775569583.78855 "main.tex" "main.pdf" "main" 1775569585.70497 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1772820570 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcsi0600.tfm" 1772820570 2048 e8858191cfc693968f6df24a98ace02f ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcsi0800.tfm" 1772820570 2048 581da102e255038da35b3ef7a18a2db8 ""
@@ -34,6 +34,7 @@
   "/usr/share/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi8.tfm" 1772820570 1676 fb6c6a335484692abff897d6e8965829 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1772820570 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1772820570 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1772820570 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1772820570 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb" 1772820570 24457 5cbb7bdf209d5d1ce9892a9b80a307cc ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb" 1772820570 24393 3b7eb51a67a0a62aec5849271bdb9c2e ""
@@ -209,11 +210,11 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1772820570 43569 fd570f2fa160877d211e859f687312ba ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1773068407 5536386 47762be935f88de7200187f949ae0015 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1773068364 3765592 d20971059594ab76dcdd3cf52ce112b4 ""
-  "images/point_processus.png" 1775420877.97715 48002 c995a845ef53173ab21cbcc8365b9e49 ""
-  "main.aux" 1775423681.96381 2065 77b83e5a0d0ee4a3f8f9d4e7b1f22073 "pdflatex"
-  "main.nav" 1775423681.96481 1184 cc3eea94092f03b35f6a084092c788b7 "pdflatex"
-  "main.out" 1775423681.96481 251 8384d5736d42841c0acaeb4402e1acc3 "pdflatex"
-  "main.tex" 1775423680.2886 4035 650a68fdfff37c88ec660cb4c352fcf4 ""
+  "images/point_processus.png" 1775423764.27843 48002 c995a845ef53173ab21cbcc8365b9e49 ""
+  "main.aux" 1775569585.6278 2450 cf4cb5c3bda6807ac3e734b3c266e317 "pdflatex"
+  "main.nav" 1775569585.62943 1461 295ff96e67b5fae5b26eb4f4e3d50306 "pdflatex"
+  "main.out" 1775569585.62943 251 8384d5736d42841c0acaeb4402e1acc3 "pdflatex"
+  "main.tex" 1775569580.21305 5135 468f21579a805bbd76e56262329eb153 ""
   (generated)
   "main.aux"
   "main.log"
