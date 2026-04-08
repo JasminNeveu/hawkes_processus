@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1775633359.30736 "main.tex" "main.pdf" "main" 1775633363.01553 2
+["pdflatex"] 1775633601.10939 "main.tex" "main.pdf" "main" 1775633605.68871 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1772820570 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcsi0600.tfm" 1772820570 2048 e8858191cfc693968f6df24a98ace02f ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcsi0800.tfm" 1772820570 2048 581da102e255038da35b3ef7a18a2db8 ""
@@ -216,6 +216,7 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1772820570 43569 fd570f2fa160877d211e859f687312ba ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1773068407 5536386 47762be935f88de7200187f949ae0015 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1773068364 3765592 d20971059594ab76dcdd3cf52ce112b4 ""
+  "images/4_simus_donnes_fict.pdf" 1775632986.54034 15227 0783cff6cc1cc7bb0da2ab7d5bace53b ""
   "images/plot_1_japan_earthq.pdf" 1775630146.18838 50432 651165f04c379b570c5e95ff6245fe7f ""
   "images/plot_2_japan_earthq.pdf" 1775630146.18838 8822 9e670c400c3b1c69ad287fa3a4ff1729 ""
   "images/plot_jpearth_vs_simu_global.pdf" 1775630146.19038 365030 3eaf8b6da3798eafafba9e8c3319f012 ""
@@ -226,10 +227,13 @@
   "images/plot_simu_alpha.pdf" 1775631469.68839 6902 c0b7ee6d81507f55bb1f5c234d6f7d8c ""
   "images/plots_simu_beta.pdf" 1775631469.68873 6300 01fe621b98e0f8b8e9fd73179ce922c7 ""
   "images/point_processus.png" 1775423764.27843 48002 c995a845ef53173ab21cbcc8365b9e49 ""
-  "main.aux" 1775633362.92382 5781 e322346a63d1919833f01522fbdf4951 "pdflatex"
-  "main.nav" 1775633362.92512 2946 cdc14d95d314f9db71bc762d7e8c71ea "pdflatex"
-  "main.out" 1775633362.92512 535 629f05235d07782b87e4a9bdb9dc93f3 "pdflatex"
-  "main.tex" 1775633357.75075 8946 50669da0490d3b37be459ba655a0026b ""
+  "images/simu_max_lh_alpha.pdf" 1775632986.54134 27920 83b971ce4723af1e134d18a31f333101 ""
+  "images/simu_max_lh_beta.pdf" 1775632986.54134 28291 7615a6980b984dabc044e8cb530e7ba8 ""
+  "images/simu_max_lh_lambda.pdf" 1775632986.54134 26464 4fa477c9c6ef720d49a84c677fda868e ""
+  "main.aux" 1775633605.60965 6165 9e426ed5b4efa10ad73a3738002c4271 "pdflatex"
+  "main.nav" 1775633605.61119 3222 2150db650f7fcf29290ef13c574efcd3 "pdflatex"
+  "main.out" 1775633605.61119 535 629f05235d07782b87e4a9bdb9dc93f3 "pdflatex"
+  "main.tex" 1775633596.44883 9422 dbc366611e40039bb84025b871010f1a ""
   (generated)
   "main.aux"
   "main.log"
