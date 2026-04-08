@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1775631761.41197 "main.tex" "main.pdf" "main" 1775631764.26711 0
+["pdflatex"] 1775633228.34782 "main.tex" "main.pdf" "main" 1775633231.87582 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1772820570 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcsi0600.tfm" 1772820570 2048 e8858191cfc693968f6df24a98ace02f ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcsi0800.tfm" 1772820570 2048 581da102e255038da35b3ef7a18a2db8 ""
@@ -226,10 +226,10 @@
   "images/plot_simu_alpha.pdf" 1775631469.68839 6902 c0b7ee6d81507f55bb1f5c234d6f7d8c ""
   "images/plots_simu_beta.pdf" 1775631469.68873 6300 01fe621b98e0f8b8e9fd73179ce922c7 ""
   "images/point_processus.png" 1775423764.27843 48002 c995a845ef53173ab21cbcc8365b9e49 ""
-  "main.aux" 1775631764.18712 5121 379186982738f6d083f80f236e1463c9 "pdflatex"
-  "main.nav" 1775631764.18857 2513 6fd03e8d1df4a874df030e5cda84fa7a "pdflatex"
-  "main.out" 1775631764.18857 442 2bdd82729140f16e458648a23af91f1c "pdflatex"
-  "main.tex" 1775631760.13517 7467 af8719d348a621a361f287bc5af28c11 ""
+  "main.aux" 1775633231.79787 5909 96ab47ffd4ba99204b82ff550fbd012a "pdflatex"
+  "main.nav" 1775633231.79917 3038 9f057ba54808f8f27974fea33d695b5b "pdflatex"
+  "main.out" 1775633231.79917 535 629f05235d07782b87e4a9bdb9dc93f3 "pdflatex"
+  "main.tex" 1775633224.16332 8922 b8caf5ce51d78f2395dda9edeb339360 ""
   (generated)
   "main.aux"
   "main.log"
