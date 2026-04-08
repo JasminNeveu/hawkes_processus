@@ -97,7 +97,7 @@ Patrick J. Laub · Thomas Taimre · Philip K. Pollett
   
   \blue{Filtration naturelle}:
 
-  \begin{equation*}\mathcal{H}(u) = \sigma\bigl(T_n, n \leq u\bigr)\end{equation*}
+  \begin{equation*}\mathcal{H}(u) = \sigma\bigl(N_t, t \leq u\bigr)\end{equation*}
   \pause
   \blue{Fonction de répartition}:
   \begin{equation*}
@@ -117,14 +117,19 @@ Patrick J. Laub · Thomas Taimre · Philip K. Pollett
 
 % TODO: finir slide: parler d'auto-exitation etc
 \begin{frame}{Intensité conditionnelle}
-  Soit $(N_t)_{t \geq 0})$ un processus de comptage.
+  Soit $(N_t)_{t \geq 0}$ un processus de comptage. Nous pouvons définir l'intensité conditionnelle de deux manières équivalentes:
 \begin{definition}
 \begin{equation*}
-\lambda^*(t) = \lim_{h \to 0^{+}} \frac{\mathbb{E}\bigl[N(t+h)-N(t) | \mathcal{H}(t)\bigr]}{h}
+\begin{aligned}
+\lambda^*(t) &= \lim_{h \to 0^{+}} \frac{\mathbb{E}\bigl[N(t+h)-N(t) | \mathcal{H}(t)\bigr]}{h}\\
+&= \frac{f^*(t)}{1 - F^*(t)}
+\end{aligned}
 \end{equation*}
 \end{definition}
 
 \pause
+
+
 \blue{Auto-exitation} \\
 
 Si une arrivée cause une augmentation de l'intensité conditonnelle, alors on dit que le processus est auto-exitant.
@@ -138,7 +143,7 @@ Si la fonction d'intensité conditionnelle baisse après une arrivée alors le p
 
 \blue{Explosion}  \\
 
-$N(t) - N(s) = \inf, ~\text{pour}~ t - s  \leq \inf$
+$N(t) - N(s) = \infty, ~\text{pour}~ t - s  < \infty$
 
 
 \end{frame}
@@ -178,9 +183,9 @@ $N(t) - N(s) = \inf, ~\text{pour}~ t - s  \leq \inf$
  \pause 
  et tel que la fonction d'intensité peut s'écrire:
   \begin{equation*}
-    \lambda^*(t) = \lambda + \sum_{t_i \leq t} \mu(t-t_i)
+    \lambda^*(t) = \lambda + \sum_{t_i < t} \mu(t-t_i)
   \end{equation*}
-  avec $lambda > 0$ et $\mu :(0, \inf) \rightarrow [0,\inf)$ respectivement \textit{intensité de fond} et \textit{fonction d'exitation}
+  avec $\{t_1, t_2, \dots\}$ des temps d'arrivés, $\lambda > 0$ et $\mu :(0, \inf) \rightarrow [0,\inf)$ respectivement \textit{intensité de fond} et \textit{fonction d'excitation}
 
   \pause
   \begin{remark}
@@ -189,44 +194,50 @@ $N(t) - N(s) = \inf, ~\text{pour}~ t - s  \leq \inf$
 
 \end{frame}
 
-\begin{frame}{Fonction d'exitation}
-  Généralement on définit la fonction d'exitation de la manière suivante:
+\begin{frame}{Fonction d'excitation}
+  Généralement on définit la fonction d'excitation de la manière suivante:
   \begin{equation*}
     \mu(t) = \alpha \exp^{-\beta t}
   \end{equation*}
+  avec $\alpha, \beta>0$ qui définissent respectivement l'intensité de l'excitation après un saut, et le taux de décroissance de l'excitation.\\
+  Les processus de Hawkes portant une fonction d'excitation de cette forme sont appellé processus de Hawkes à intensité décroissante exponentiellement.
+  
+\pause
 
-  $\alpha$: intensité d'influence d'une arrivée \\
-  $\beta$: temps de décroissance de l'influence d'une arrivée
+  \begin{remark}
+    $\alpha < \beta$ est une condition nécessaire pour que le processus n'explose pas.
+  \end{remark}
 \end{frame}
+
+
+\section{Estimation}
+
+
+\begin{frame}
+Soit une famille $\{t_1, t_2, \dots, t_k\}$ de temps d'arrivé supposée dérivée d'un processus de Hawkes exponentielle.\\
+\noindent
+Notre objectif est d'approcher au mieux les paramètres du processus dont dérive la famille. En d'autre terme créer des estimateurs $\widehat{\theta} = (\widehat{\lambda}, \widehat{\alpha}, \widehat{\beta})$\\
+\pause
+\vspace{2em}
+\noindent
+Une bonne méthode pour cela est l'estimation par maximum de vraissemblance.
+\end{frame}
+
+
+
+
+
 
 
 
 \section{Simulation}
 
-
-
 \begin{frame}{Paramètres $\alpha$, $\beta$}
 
-
-\begin{figure}
-  \centering
-  \includegraphics[width=0.75\linewidth]{images/plot_simu_alpha.pdf}
-  \label{fig:simu_alpha}
-  \caption{Variation de $\alpha$}
-\end{figure}
 \end{frame}
 
-\begin{frame}{Paramètres $\alpha$, $\beta$}
-\begin{figure}
-  \centering
-  \includegraphics[width=0.75\linewidth]{images/plots_simu_beta.pdf}
-  \label{fig:simu_alpha}
-  \caption{Variation de $\beta$}
-\end{figure}
+\begin{frame}{Maximum de vraisemblance}
 \end{frame}
-
-
-
 
 \section{Application}
 \begin{frame}{Données des séismes japonnais}
