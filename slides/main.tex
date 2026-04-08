@@ -40,7 +40,7 @@ Aziz Seghaier, Thibaut Micos, Antoine Rustendholz, Jasmin Neveu
 \vspace{1.5em}
 
 {\footnotesize
-Basé sur le papier de 
+Basé sur le papier de
 Patrick J. Laub · Thomas Taimre · Philip K. Pollett
 \textit{Hawkes Processes} (2015)
 \par}
@@ -94,7 +94,7 @@ Patrick J. Laub · Thomas Taimre · Philip K. Pollett
 
 
 \begin{frame}{Fonction de densité et fonction de répartition}
-  
+
   \blue{Filtration naturelle}:
 
   \begin{equation*}\mathcal{H}(u) = \sigma\bigl(N_t, t \leq u\bigr)\end{equation*}
@@ -150,28 +150,28 @@ $N(t) - N(s) = \infty, ~\text{pour}~ t - s  < \infty$
 
 \begin{frame}{Compensateur}
   \begin{definition}[Compensateur]
-    Soit $(N_t)_{t \geq 0}$  un processus de comptage croissant, la fonction 
+    Soit $(N_t)_{t \geq 0}$  un processus de comptage croissant, la fonction
     \begin{equation*}
       \Lambda(t) = \int_{0}^{t}\lambda^*(s) ds
     \end{equation*}
     est appelée compensateur du processus.
   \end{definition}
 
-  \pause 
-  C'est l'unique fonction fonction prédictible issue de 0 telle que 
+  \pause
+  C'est l'unique fonction fonction prédictible issue de 0 telle que
   \begin{equation*}
     N(t) = M(t) + \Lambda(t)
   \end{equation*}
   avec $M(t)$ une martingale
 
 \end{frame}
- 
+
 
 \section{Processus de Hawkes}
 
 \begin{frame}
   \begin{definition}[Processus de Hawkes]
-    Soit $(N_t)_{t\geq 0}$ un processus de comptage, tel que 
+    Soit $(N_t)_{t\geq 0}$ un processus de comptage, tel que
     \begin{equation*}
       \mathbb{P}\bigl(N(t+h) - N(t) = m | \mathcal{H}(t)\bigr) = \begin{cases}
         \lambda^*(t)h + o(h), &m=1 \\
@@ -180,7 +180,7 @@ $N(t) - N(s) = \infty, ~\text{pour}~ t - s  < \infty$
       \end{cases}
     \end{equation*}
   \end{definition}
- \pause 
+ \pause
  et tel que la fonction d'intensité peut s'écrire:
   \begin{equation*}
     \lambda^*(t) = \lambda + \sum_{t_i < t} \mu(t-t_i)
@@ -201,7 +201,7 @@ $N(t) - N(s) = \infty, ~\text{pour}~ t - s  < \infty$
   \end{equation*}
   avec $\alpha, \beta>0$ qui définissent respectivement l'intensité de l'excitation après un saut, et le taux de décroissance de l'excitation.\\
   Les processus de Hawkes portant une fonction d'excitation de cette forme sont appellé processus de Hawkes à intensité décroissante exponentiellement.
-  
+
 \pause
 
   \begin{remark}
@@ -225,6 +225,25 @@ Une bonne méthode pour cela est l'estimation par maximum de vraissemblance.
 
 
 
+\begin{frame}{Paramètres $\alpha$, $\beta$}
+
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.75\linewidth]{images/plot_simu_alpha.pdf}
+  \label{fig:simu_alpha}
+  \caption{Variation de $\alpha$}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Paramètres $\alpha$, $\beta$}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.75\linewidth]{images/plots_simu_beta.pdf}
+  \label{fig:simu_alpha}
+  \caption{Variation de $\beta$}
+\end{figure}
+\end{frame}
 
 
 
