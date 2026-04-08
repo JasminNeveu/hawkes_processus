@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.3.9)  8 APR 2026 09:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.3.9)  8 APR 2026 09:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -718,7 +718,7 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
 ] [6
 
 ]
-<images/point_processus.png, id=361, 1225.57875pt x 552.0625pt>
+<images/point_processus.png, id=350, 1225.57875pt x 552.0625pt>
 File: images/point_processus.png Graphic file (type png)
 <use images/point_processus.png>
 Package pdftex.def Info: images/point_processus.png  used on input line 93.
@@ -757,137 +757,87 @@ Package pdftex.def Info: images/point_processus.png  used on input line 93.
 
 ] [23
 
+] [24
+
 ]
-<images/plot_simu_alpha.pdf, id=1080, 448.67625pt x 316.18124pt>
+<images/plot_simu_alpha.pdf, id=1099, 448.67625pt x 316.18124pt>
 File: images/plot_simu_alpha.pdf Graphic file (type pdf)
 <use images/plot_simu_alpha.pdf>
-Package pdftex.def Info: images/plot_simu_alpha.pdf  used on input line 237.
+Package pdftex.def Info: images/plot_simu_alpha.pdf  used on input line 247.
 (pdftex.def)             Requested size: 230.46739pt x 162.40819pt.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 237.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 247.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <7> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 237.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 247.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <5> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 237.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 247.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <14.4> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 237.
- [24
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 247.
+ [25
 
  <./images/plot_simu_alpha.pdf>]
-<images/plots_simu_beta.pdf, id=1145, 499.8675pt x 279.0425pt>
+<images/plots_simu_beta.pdf, id=1163, 499.8675pt x 279.0425pt>
 File: images/plots_simu_beta.pdf Graphic file (type pdf)
 <use images/plots_simu_beta.pdf>
-Package pdftex.def Info: images/plots_simu_beta.pdf  used on input line 246.
+Package pdftex.def Info: images/plots_simu_beta.pdf  used on input line 256.
 (pdftex.def)             Requested size: 230.46739pt x 128.65489pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{fig:simu_alpha}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.246 \end{frame}
-                  [25
+l.256 \end{frame}
+                  [26
 
- <./images/plots_simu_beta.pdf>] [26
+ <./images/plots_simu_beta.pdf>]
 
-] [27
+! Package keyval Error: widt undefined.
 
-] [28
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.264 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: images/plot_simu_alpha.pdf Graphic file (type pdf)
+<use images/plot_simu_alpha.pdf>
+Package pdftex.def Info: images/plot_simu_alpha.pdf  used on input line 264.
+(pdftex.def)             Requested size: 448.67516pt x 316.18047pt.
+
+Overfull \hbox (141.38528pt too wide) in paragraph at lines 264--264
+ [] 
+ []
+
+
+Overfull \vbox (101.84065pt too high) detected at line 264
+ []
+
+[27
 
 ]
-<images/plot_1_japan_earthq.pdf, id=1377, 341.275pt x 284.06125pt>
+<images/plot_1_japan_earthq.pdf, id=1277, 341.275pt x 284.06125pt>
 File: images/plot_1_japan_earthq.pdf Graphic file (type pdf)
 <use images/plot_1_japan_earthq.pdf>
-Package pdftex.def Info: images/plot_1_japan_earthq.pdf  used on input line 275.
+Package pdftex.def Info: images/plot_1_japan_earthq.pdf  used on input line 274.
+(pdftex.def)             Requested size: 230.46739pt x 191.83275pt.
+ [28
+
+ <./images/plot_1_japan_earthq.pdf>]
+<images/plot_2_japan_earthq.pdf, id=1339, 341.275pt x 284.06125pt>
+File: images/plot_2_japan_earthq.pdf Graphic file (type pdf)
+<use images/plot_2_japan_earthq.pdf>
+Package pdftex.def Info: images/plot_2_japan_earthq.pdf  used on input line 283.
 (pdftex.def)             Requested size: 230.46739pt x 191.83275pt.
  [29
 
- <./images/plot_1_japan_earthq.pdf>]
-<images/plot_2_japan_earthq.pdf, id=1440, 341.275pt x 284.06125pt>
-File: images/plot_2_japan_earthq.pdf Graphic file (type pdf)
-<use images/plot_2_japan_earthq.pdf>
-Package pdftex.def Info: images/plot_2_japan_earthq.pdf  used on input line 284.
-(pdftex.def)             Requested size: 230.46739pt x 191.83275pt.
- [30
-
  <./images/plot_2_japan_earthq.pdf>]
-<images/plot_likelih_lambda.pdf, id=1504, 736.7525pt x 325.215pt>
+<images/plot_likelih_lambda.pdf, id=1400, 736.7525pt x 325.215pt>
 File: images/plot_likelih_lambda.pdf Graphic file (type pdf)
 <use images/plot_likelih_lambda.pdf>
-Package pdftex.def Info: images/plot_likelih_lambda.pdf  used on input line 293.
+Package pdftex.def Info: images/plot_likelih_lambda.pdf  used on input line 292.
 (pdftex.def)             Requested size: 307.28987pt x 135.64156pt.
- [31
+ [30
 
- <./images/plot_likelih_lambda.pdf>]
-<images/plot_likelih_alpha.pdf, id=1568, 736.7525pt x 325.215pt>
-File: images/plot_likelih_alpha.pdf Graphic file (type pdf)
-<use images/plot_likelih_alpha.pdf>
-Package pdftex.def Info: images/plot_likelih_alpha.pdf  used on input line 302.
-(pdftex.def)             Requested size: 307.28987pt x 135.64156pt.
- [32
-
- <./images/plot_likelih_alpha.pdf>]
-<images/plot_likelih_beta.pdf, id=1631, 736.7525pt x 325.215pt>
-File: images/plot_likelih_beta.pdf Graphic file (type pdf)
-<use images/plot_likelih_beta.pdf>
-Package pdftex.def Info: images/plot_likelih_beta.pdf  used on input line 311.
-(pdftex.def)             Requested size: 307.28987pt x 135.64156pt.
- [33
-
- <./images/plot_likelih_beta.pdf>]
-<images/plot_jpearth_vs_simu_global.pdf, id=1695, 939.51pt x 427.5975pt>
-File: images/plot_jpearth_vs_simu_global.pdf Graphic file (type pdf)
-<use images/plot_jpearth_vs_simu_global.pdf>
-Package pdftex.def Info: images/plot_jpearth_vs_simu_global.pdf  used on input line 320.
-(pdftex.def)             Requested size: 307.28987pt x 139.85487pt.
- [34
-
- <./images/plot_jpearth_vs_simu_global.pdf>]
-<images/plot_jpearth_vs_simu_local.pdf, id=1758, 939.51pt x 427.5975pt>
-File: images/plot_jpearth_vs_simu_local.pdf Graphic file (type pdf)
-<use images/plot_jpearth_vs_simu_local.pdf>
-Package pdftex.def Info: images/plot_jpearth_vs_simu_local.pdf  used on input line 329.
-(pdftex.def)             Requested size: 307.28987pt x 139.85487pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:simulation_1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.329 \end{frame}
-                  [35
-
- <./images/plot_jpearth_vs_simu_local.pdf>]
-\tf@nav=\write6
-\openout6 = `main.nav'.
-
-\tf@toc=\write7
-\openout7 = `main.toc'.
-
-\tf@snm=\write8
-\openout8 = `main.snm'.
-
- (./main.aux)
- ***********
-LaTeX2e <2025-11-01>
-L3 programming layer <2026-01-19>
- ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 629F05235D07782B87E4A9BDB9DC93F3;535.
- ) 
-Here is how much of TeX's memory you used:
- 21829 strings out of 467525
- 416722 string characters out of 5425862
- 814860 words of memory out of 5000000
- 50203 multiletter control sequences out of 15000+600000
- 646689 words of font info for 105 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 128i,20n,123p,379b,780s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb>
-Output written on main.pdf (35 pages, 901723 bytes).
-PDF statistics:
- 1897 PDF objects out of 2073 (max. 8388607)
- 1183 compressed objects within 12 object streams
- 84 named destinations out of 1000 (max. 500000)
- 145 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ <./images/plot_likelih_lambda.pdf

@@ -408,6 +408,10 @@ INPUT ./images/plots_simu_beta.pdf
 INPUT ./images/plots_simu_beta.pdf
 INPUT ./images/plots_simu_beta.pdf
 INPUT ./images/plots_simu_beta.pdf
+INPUT ./images/plot_simu_alpha.pdf
+INPUT ./images/plot_simu_alpha.pdf
+INPUT ./images/plot_simu_alpha.pdf
+INPUT ./images/plot_simu_alpha.pdf
 INPUT ./images/plot_1_japan_earthq.pdf
 INPUT ./images/plot_1_japan_earthq.pdf
 INPUT ./images/plot_1_japan_earthq.pdf
@@ -463,8 +467,3 @@ INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb
-INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
-INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
-INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb
-INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb

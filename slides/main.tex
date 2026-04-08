@@ -225,6 +225,16 @@ Une bonne méthode pour cela est l'estimation par maximum de vraissemblance.
 
 
 
+\begin{frame}{Vraissemblance}
+  Soit $(N_t)_{t \geq 0}$ un processus de comptage sur $[0,T]$, avec T positif et $t_1,...,t_k$ des réalisation de $(N_t)_{t \geq 0}$. La vraissemblance est donnée par:
+  \begin{equation*}
+    L = \bigl[\prod_{i=1}^k \lambda^*(t_i)\bigr]\exp\bigl(-\int_0^T\lambda^*(u)du)\bigr)
+  \end{equation*}
+\end{frame}
+
+
+\section{Simulation}
+
 \begin{frame}{Paramètres $\alpha$, $\beta$}
 
 
@@ -246,22 +256,11 @@ Une bonne méthode pour cela est l'estimation par maximum de vraissemblance.
 \end{frame}
 
 
+\begin{frame}{Biais}
+  \begin{figure}
+    \includegraphics[widt=0.75\linewidth]{images/plot_simu_alpha.pdf}
 
-\begin{frame}{Vraissemblance}
-  Soit $(N_t)_{t \geq 0}$ un processus de comptage sur $[0,T]$, avec T positif et $t_1,...,t_k$ des réalisation de $(N_t)_{t \geq 0}$. La vraissemblance est donnée par:
-  \begin{equation*}
-    L = \bigl[\prod_{i=1}^k \lambda^*(t_i)\bigr]\exp\bigl(-\int_0^T\lambda^*(u)du)\bigr)
-  \end{equation*}
-\end{frame}
-
-
-\section{Simulation}
-
-\begin{frame}{Paramètres $\alpha$, $\beta$}
-
-\end{frame}
-
-\begin{frame}{Maximum de vraisemblance}
+  \end{figure}
 \end{frame}
 
 \section{Application}
