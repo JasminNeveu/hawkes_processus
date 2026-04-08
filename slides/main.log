@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.3.9)  8 APR 2026 08:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.3.9)  8 APR 2026 08:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -757,68 +757,87 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <7> not available
 (Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 210.
  [21
 
-] [22
-
 ]
-<images/plot_1_japan_earthq.pdf, id=896, 341.275pt x 284.06125pt>
+
+LaTeX Warning: File `images/...' not found on input line 213.
+
+
+! LaTeX Error: Unknown graphics extension: ..
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.213 ...raphics[width=0.75\linewidth]{images/...}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22
+
+] [23]
+<images/plot_1_japan_earthq.pdf, id=921, 341.275pt x 284.06125pt>
 File: images/plot_1_japan_earthq.pdf Graphic file (type pdf)
 <use images/plot_1_japan_earthq.pdf>
-Package pdftex.def Info: images/plot_1_japan_earthq.pdf  used on input line 225.
-(pdftex.def)             Requested size: 230.46739pt x 191.83275pt.
- [23
-
- <./images/plot_1_japan_earthq.pdf>]
-<images/plot_2_japan_earthq.pdf, id=949, 341.275pt x 284.06125pt>
-File: images/plot_2_japan_earthq.pdf Graphic file (type pdf)
-<use images/plot_2_japan_earthq.pdf>
-Package pdftex.def Info: images/plot_2_japan_earthq.pdf  used on input line 234.
+Package pdftex.def Info: images/plot_1_japan_earthq.pdf  used on input line 229.
 (pdftex.def)             Requested size: 230.46739pt x 191.83275pt.
  [24
 
- <./images/plot_2_japan_earthq.pdf>]
-<images/plot_likelih_lambda.pdf, id=1003, 736.7525pt x 325.215pt>
-File: images/plot_likelih_lambda.pdf Graphic file (type pdf)
-<use images/plot_likelih_lambda.pdf>
-Package pdftex.def Info: images/plot_likelih_lambda.pdf  used on input line 243.
-(pdftex.def)             Requested size: 307.28987pt x 135.64156pt.
+ <./images/plot_1_japan_earthq.pdf>]
+<images/plot_2_japan_earthq.pdf, id=975, 341.275pt x 284.06125pt>
+File: images/plot_2_japan_earthq.pdf Graphic file (type pdf)
+<use images/plot_2_japan_earthq.pdf>
+Package pdftex.def Info: images/plot_2_japan_earthq.pdf  used on input line 238.
+(pdftex.def)             Requested size: 230.46739pt x 191.83275pt.
  [25
 
- <./images/plot_likelih_lambda.pdf>]
-<images/plot_likelih_alpha.pdf, id=1057, 736.7525pt x 325.215pt>
-File: images/plot_likelih_alpha.pdf Graphic file (type pdf)
-<use images/plot_likelih_alpha.pdf>
-Package pdftex.def Info: images/plot_likelih_alpha.pdf  used on input line 252.
+ <./images/plot_2_japan_earthq.pdf>]
+<images/plot_likelih_lambda.pdf, id=1029, 736.7525pt x 325.215pt>
+File: images/plot_likelih_lambda.pdf Graphic file (type pdf)
+<use images/plot_likelih_lambda.pdf>
+Package pdftex.def Info: images/plot_likelih_lambda.pdf  used on input line 247.
 (pdftex.def)             Requested size: 307.28987pt x 135.64156pt.
  [26
 
- <./images/plot_likelih_alpha.pdf>]
-<images/plot_likelih_beta.pdf, id=1110, 736.7525pt x 325.215pt>
-File: images/plot_likelih_beta.pdf Graphic file (type pdf)
-<use images/plot_likelih_beta.pdf>
-Package pdftex.def Info: images/plot_likelih_beta.pdf  used on input line 261.
+ <./images/plot_likelih_lambda.pdf>]
+<images/plot_likelih_alpha.pdf, id=1082, 736.7525pt x 325.215pt>
+File: images/plot_likelih_alpha.pdf Graphic file (type pdf)
+<use images/plot_likelih_alpha.pdf>
+Package pdftex.def Info: images/plot_likelih_alpha.pdf  used on input line 256.
 (pdftex.def)             Requested size: 307.28987pt x 135.64156pt.
  [27
 
- <./images/plot_likelih_beta.pdf>]
-<images/plot_jpearth_vs_simu_global.pdf, id=1163, 939.51pt x 427.5975pt>
-File: images/plot_jpearth_vs_simu_global.pdf Graphic file (type pdf)
-<use images/plot_jpearth_vs_simu_global.pdf>
-Package pdftex.def Info: images/plot_jpearth_vs_simu_global.pdf  used on input line 270.
-(pdftex.def)             Requested size: 307.28987pt x 139.85487pt.
+ <./images/plot_likelih_alpha.pdf>]
+<images/plot_likelih_beta.pdf, id=1135, 736.7525pt x 325.215pt>
+File: images/plot_likelih_beta.pdf Graphic file (type pdf)
+<use images/plot_likelih_beta.pdf>
+Package pdftex.def Info: images/plot_likelih_beta.pdf  used on input line 265.
+(pdftex.def)             Requested size: 307.28987pt x 135.64156pt.
  [28
 
+ <./images/plot_likelih_beta.pdf>]
+<images/plot_jpearth_vs_simu_global.pdf, id=1189, 939.51pt x 427.5975pt>
+File: images/plot_jpearth_vs_simu_global.pdf Graphic file (type pdf)
+<use images/plot_jpearth_vs_simu_global.pdf>
+Package pdftex.def Info: images/plot_jpearth_vs_simu_global.pdf  used on input line 274.
+(pdftex.def)             Requested size: 307.28987pt x 139.85487pt.
+ [29
+
  <./images/plot_jpearth_vs_simu_global.pdf>]
-<images/plot_jpearth_vs_simu_local.pdf, id=1217, 939.51pt x 427.5975pt>
+<images/plot_jpearth_vs_simu_local.pdf, id=1242, 939.51pt x 427.5975pt>
 File: images/plot_jpearth_vs_simu_local.pdf Graphic file (type pdf)
 <use images/plot_jpearth_vs_simu_local.pdf>
-Package pdftex.def Info: images/plot_jpearth_vs_simu_local.pdf  used on input line 279.
+Package pdftex.def Info: images/plot_jpearth_vs_simu_local.pdf  used on input line 283.
 (pdftex.def)             Requested size: 307.28987pt x 139.85487pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{fig:simulation_1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.279 \end{frame}
-                  [29
+l.283 \end{frame}
+                  [30
 
  <./images/plot_jpearth_vs_simu_local.pdf>]
 \tf@nav=\write6
@@ -843,18 +862,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 2BDD82729140F16E458648A23AF91F1C;442.
  ) 
 Here is how much of TeX's memory you used:
- 21779 strings out of 467525
- 415848 string characters out of 5425862
+ 21811 strings out of 467525
+ 416471 string characters out of 5425862
  810457 words of memory out of 5000000
- 50169 multiletter control sequences out of 15000+600000
+ 50199 multiletter control sequences out of 15000+600000
  645055 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,20n,123p,379b,780s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb>
-Output written on main.pdf (29 pages, 871305 bytes).
+Output written on main.pdf (30 pages, 872155 bytes).
 PDF statistics:
- 1348 PDF objects out of 1440 (max. 8388607)
- 846 compressed objects within 9 object streams
- 70 named destinations out of 1000 (max. 500000)
+ 1374 PDF objects out of 1440 (max. 8388607)
+ 871 compressed objects within 9 object streams
+ 72 named destinations out of 1000 (max. 500000)
  127 words of extra memory for PDF output out of 10000 (max. 10000000)
 
